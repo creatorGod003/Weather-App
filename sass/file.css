@@ -9,12 +9,30 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#0c263b), to(#1f7aaf));
-  background-image: linear-gradient(0deg, #0c263b, #1f7aaf);
+section {
+  padding: 1rem;
   width: 100vw;
   height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0c263b), to(#1f7aaf));
+  background-image: linear-gradient(0deg, #0c263b, #1f7aaf);
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  padding: 3rem;
 }
 
 header h1 {
@@ -25,11 +43,6 @@ header h1 {
 }
 
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +56,8 @@ header h1 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  min-height: 340px;
+  max-width: 500px;
+  max-height: 700px;
   background-color: #ebe5e5;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#a1a1f5), to(#faa9a9));
   background-image: linear-gradient(0deg, #a1a1f5, #faa9a9);
