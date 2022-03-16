@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
-    <link rel="stylesheet" href="sass/file.css">
-</head>
-<body>
+    <link rel="stylesheet" href="sass/file.css" />
+    <script
+      src="https://kit.fontawesome.com/2c2e7e4535.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>Weather App</h1>
+      </header>
 
-
-   <section>
-    <header>
-        <h1> Weather App </h1>
-    </header>
-
-    <div class="container">
-
+      <div class="container">
         <div id="date">----:--:--</div>
         <div id="time">--:--</div>
 
         <div id="weather">
-
-            <div id="message"></div>
-            <div id="temp">-℃</div>
-            <div id="icon">
-                <img src="weather.png" alt="" id="weather_icon">
-            </div>
-
+          <div id="message"></div>
+          <div id="temp">-℃</div>
+          <div id="icon">
+            <img src="weather.png" alt="" id="weather_icon" />
+          </div>
         </div>
 
-        <input type="search" name="" id="search" placeholder="Enter your city name ...">
+        <input
+          type="search"
+          name=""
+          id="search"
+          placeholder="Enter your city name ..."
+        />
 
-        <button id="WeatherBtn">
-            Show weather
-        </button>
+        <div class="action">
+            
+          <button id="WeatherBtn">Show weather</button>
 
-    </div>
-   </section>
-    
+          <button id="locationBtn">
+            <i class="fa-solid fa-location-crosshairs"></i>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
     <script src="index.js"></script>
-    
-</body>
+  </body>
 </html>
