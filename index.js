@@ -1,6 +1,7 @@
 const weatherBtn = document.getElementById("WeatherBtn");
 let locationParam = "";
 
+
 weatherBtn.addEventListener("click", function () {
   const searchBox = document.getElementById("search");
   let value;
@@ -31,6 +32,17 @@ weatherBtn.addEventListener("click", function () {
         data.current.last_updated.split(" ")[0];
       document.getElementById("time").innerHTML =
         data.current.last_updated.split(" ")[1];
+
+      
+
+        if(locationParam){
+          console.log( typeof data.location.name);
+          document.getElementById("search").style.display = "block";
+          document.getElementById("search").value = data.location.name;
+          document.getElementById("search").disabled = true;
+          document.getElementById("search").spellcheck = false;
+        }
+
     })
     .catch(() => {
       document.getElementById("message").innerHTML = "Incorrect City";
@@ -56,10 +68,22 @@ function locationBtnHandler() {
   function changeColor() {
     if (i % 2 == 0) {
       document.getElementById("search").style.display = "none";
+      
       locationBtn.style.backgroundColor = "#5252f5";
     } else {
+      document.getElementById("search").value = "";
       document.getElementById("search").style.display = "initial";
       locationBtn.style.backgroundColor = "#efefef";
+
+      document.getElementById("message").innerHTML = "";
+      document.getElementById("date").innerHTML = "----:--:--";
+      document.getElementById("time").innerHTML = "--:--";
+      document.getElementById("weather_icon").src = "weather.png";
+      document.getElementById("temp").innerHTML = "-℃";
+
+
+      document.getElementById("search").disabled = false;
+
     }
 
     i++;
