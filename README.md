@@ -15,7 +15,7 @@ I have used weather and Html geolocation apis as well.
 
 *The website need ui improvements such as color combination, button placement etc.
 *changes to be made when the website works on different devices. i.e in responsive part.
-*need improvements in ux i.e how user experience can be improment while interaction.
+*need improvements in ux i.e how user experience can be improve while interacting with it.
 
-If anyone feels that "I can try to fix any of the above issue", please don't hesitate. Your small contribution is valuable for us.
-Tap on discussion page of this repo and contact to author directly
+If anyone feels that "I can try to fix any of the above issue", please don't hesitate. Your small contribution is valuable for me.
+Tap on discussion page of this repo and contact to author directly.
